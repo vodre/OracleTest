@@ -49,8 +49,6 @@ Model View Intend builds upon Unidirectional Data Flow, better organizing the UI
 - Flows
 - Kotlin
 - Kotlin Extensions
-- Permissions
-- Notifications
 - ViewModel
 - Lint
 
