@@ -14,7 +14,7 @@ The functionality presents solutions to the different scenarios required to have
 #### [Cycler](https://github.com/square/cycler). 
 API that allows to simplify the RecyclerView implementation.
 
-###FragmentViewBindingDelegate
+### FragmentViewBindingDelegate
 Eliminates boilerplate code when is about implementing view models.
 
 #### [Retrofit](https://github.com/square/retrofit). 
