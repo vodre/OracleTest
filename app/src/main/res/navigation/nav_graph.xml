@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SplashFragment">
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.oracle.exercise.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_SplashFragment_to_ListFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/SplashFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/ListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.oracle.exercise.ui.list.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_ListFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" >
+            <argument
+                android:name="flight"
+                app:argType="com.oracle.exercise.model.Flight" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.oracle.exercise.ui.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail" />
+
+</navigation>
